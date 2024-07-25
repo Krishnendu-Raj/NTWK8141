@@ -1,0 +1,17 @@
+#!/bin/bash
+# A Script that uses conditional expressions and loops
+count=0
+until [ $count -gt 5 ]
+do
+echo "The loop count is $count"
+(( count++))
+done
+#
+if [ $count -eq 10 ]
+then
+echo "Count is set to 10: $count"
+else
+echo "Count is not set to 10: $count"
+fi
+exit
+
